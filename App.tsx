@@ -1,7 +1,11 @@
 import { Text, View } from 'react-native';
-
+import ChatScreen from './src/screens/ChatScreen';
+import { NativeWindStyleSheet } from 'nativewind';
 export default function App() {
   return (
-   <Text className='bg-red-700'>Hello</Text>
+  <ChatScreen />
   );
 }
+NativeWindStyleSheet.setOutput({
+  default: "native",
+});
